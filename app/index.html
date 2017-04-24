@@ -9,14 +9,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <title>WM</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="assets/css/main.min.css">
 </head>
 
 <body class='page-homepage'>
   <header id="header" class="header"></header>
-  <main class="page"></main>
+  <main class="page">
+
+    <section id="aaa" class="table">
+      <table id="table" class="table-body cell-border stripe" cellspacing="0" width="100%">
+            <thead>
+              <!-- <tr class="ttt">
+                <th class="table__col-seacrh">search</th>
+                <th class="table__col-seacrh">search</th>
+                <th class="table__col-seacrh">search</th>
+                <th class="table__col-dd">dd</th>
+                <th class="table__col-dd">dd</th>
+                <th>empty</th>
+              </tr> -->
+              <tr>
+                <th>Tag ID</th>
+                <th>Tag Name</th>
+                <th>Tag Type</th>
+                <th>My Feed</th>
+                <th>My Favourites</th>
+                <th data-orderable="false">Actions</th>
+              </tr>
+            </thead>
+            <!-- <tfoot id="table-footer">
+              <tr>
+                <th class="table__col-seacrh">Tag ID</th>
+                <th class="table__col-seacrh">Tag Name</th>
+                <th class="table__col-seacrh">Tag Type</th>
+                <th>My Feed</th>
+                <th>My Favourites</th>
+                <th>Actions</th>
+              </tr>
+          </tfoot> -->
+      </table>
+    </section>
+
+
+  </main>
   <footer id="footer" class="footer"></footer>
 </body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src='//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js'></script>
 <script type="text/javascript" src="assets/js/main.min.js"></script>
 
 </html>
