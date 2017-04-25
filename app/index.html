@@ -9,44 +9,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <title>WM</title>
+
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.2/css/select.dataTables.min.css">
+  <link rel="stylesheet" href="cssW/editor.dataTables.css">
   <link rel="stylesheet" href="assets/css/main.min.css">
+
+  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.14/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.2/css/select.bootstrap.min.css">
+  <link rel="stylesheet" href="cssW/editor.bootstrap.min.css"> -->
+
 </head>
 
 <body class='page-homepage'>
   <header id="header" class="header"></header>
   <main class="page">
 
-    <section id="aaa" class="table">
+    <section class="table">
+
       <table id="table" class="table-body cell-border stripe" cellspacing="0" width="100%">
-            <thead>
-              <!-- <tr class="ttt">
-                <th class="table__col-seacrh">search</th>
-                <th class="table__col-seacrh">search</th>
-                <th class="table__col-seacrh">search</th>
-                <th class="table__col-dd">dd</th>
-                <th class="table__col-dd">dd</th>
-                <th>empty</th>
-              </tr> -->
-              <tr>
-                <th>Tag ID</th>
-                <th>Tag Name</th>
-                <th>Tag Type</th>
-                <th>My Feed</th>
-                <th>My Favourites</th>
-                <th data-orderable="false">Actions</th>
-              </tr>
-            </thead>
-            <!-- <tfoot id="table-footer">
-              <tr>
-                <th class="table__col-seacrh">Tag ID</th>
-                <th class="table__col-seacrh">Tag Name</th>
-                <th class="table__col-seacrh">Tag Type</th>
-                <th>My Feed</th>
-                <th>My Favourites</th>
-                <th>Actions</th>
-              </tr>
-          </tfoot> -->
+          <thead>
+            <tr>
+                <td id="filter_col1" data-column="0" align="center">
+                  <input type="text" class="column_filter" id="col0_filter">
+                </td>
+                <td id="filter_col2" data-column="1" align="center">
+                  <input type="text" class="column_filter" id="col1_filter">
+                </td>
+                <td id="filter_col3" data-column="2" align="center">
+                  <input type="text" class="column_filter" id="col2_filter">
+                </td>
+                <td>
+                  <select id="filter_col4">
+                    <option value="All">All</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select id="filter_col5">
+                    <option value="All">All</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+              <th>Tag ID</th>
+              <th>Tag Name</th>
+              <th>Tag Type</th>
+              <th>My Feed</th>
+              <th>My Favourites</th>
+              <th data-orderable="false">Actions</th>
+            </tr>
+          </thead>
       </table>
     </section>
 
@@ -55,7 +75,28 @@
   <footer id="footer" class="footer"></footer>
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script type="text/javascript" src='//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/select/1.2.2/js/dataTables.select.min.js'></script>
+
+<script type="text/javascript" src='jsW/dataTables.editor.js'></script>
+
 <script type="text/javascript" src="assets/js/main.min.js"></script>
+
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/1.10.14/js/jquery.dataTables.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/1.10.14/js/dataTables.bootstrap.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/buttons/1.3.1/js/buttons.bootstrap.min.js'></script>
+<script type="text/javascript" src='https://cdn.datatables.net/select/1.2.2/js/dataTables.select.min.js'></script>
+
+<script type="text/javascript" src='jsW/dataTables.editor.js'></script>
+<script type="text/javascript" src='jsW/editor.bootstrap.min.js'></script>
+
+<script type="text/javascript" src="assets/js/main.min.js"></script> -->
+
+
 
 </html>
