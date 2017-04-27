@@ -1,9 +1,58 @@
 //-----
 .table {
-  // tfoot {
-  //   display: table-body-group;
-  // }
+  padding: 2.4rem 1.2%;
+  background-color: #f5f5f5;
+  table {
+    margin: 2rem 0;
+    display: inline-block;
+  }
+  &__header__row-first {
+    td {
+      // padding: 0 !important;
+      border-right: 1px solid #ddd;
+      &:first-child {
+        border-left: 1px solid #ddd;
+      }
+      &:last-child {
+        background-color: #ebeae5;
+      }
+    },
+    select {
+      width: 100%;
+    }
+  }
+  &__header__row-second {
+    th {
+      border-right: 1px solid #ddd;
+      &:first-child {
+        border-left: 1px solid #ddd;
+      }
+    }
+  }
+  thead tr th,
+  thead tr td {
+    border-color: #ddd;
+    // border-top: 1px solid #ddd;
+    // border-right: 1px solid #ddd;
+  }
+  .helper-text-align {
+    text-align: center;
+  }
   input {
     width: 100%;
   }
+  table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: #f5f5f5;
+  }
+  #table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  th,
+  td {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .editor_edit {}
+  .editor_remove {}
 }

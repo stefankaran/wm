@@ -2,27 +2,500 @@
   "data": [
     {
       "DT_RowId": "row_1",
-      "first_name": "Tiger",
-      "last_name": "Nixon",
-      "position": "System Architect",
-      "email": "t.nixon@datatables.net",
-      "office": "Edinburgh",
-      "extn": "5421",
-      "age": "61",
-      "salary": "320800",
-      "start_date": "2011-04-25"
+      "tag_name": "Manchester UTD",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
     },
     {
       "DT_RowId": "row_2",
-      "first_name": "Garrett",
-      "last_name": "Winters",
-      "position": "Accountant",
-      "email": "g.winters@datatables.net",
-      "office": "Tokyo",
-      "extn": "8422",
-      "age": "63",
-      "salary": "170750",
-      "start_date": "2011-07-25"
+      "tag_name": "Arsenal",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_3",
+      "tag_name": "Chelsea",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_4",
+      "tag_name": "Manchester City",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_5",
+      "tag_name": "Liverpool",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_6",
+      "tag_name": "Tottenhem",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_7",
+      "tag_name": "Everton",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_8",
+      "tag_name": "Barcelona",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_9",
+      "tag_name": "Real Madrid",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_10",
+      "tag_name": "Atletiko Madrid",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_11",
+      "tag_name": "Sevilla",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_12",
+      "tag_name": "Juventus",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_13",
+      "tag_name": "Inter",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_14",
+      "tag_name": "Milan",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_15",
+      "tag_name": "Napoli",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_16",
+      "tag_name": "PSG",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_17",
+      "tag_name": "Monako",
+      "tag_type": "Fudbalski klub",
+      "my_feed": "OK",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_18",
+      "tag_name": "Borusia Dortmund",
+      "tag_type": "Fudbalski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_19",
+      "tag_name": "Bayern Munchen",
+      "tag_type": "Fudbalski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_20",
+      "tag_name": "Unikaha",
+      "tag_type": "Fudbalski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_21",
+      "tag_name": "Valencia",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_22",
+      "tag_name": "Mega Vizura",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_23",
+      "tag_name": "Fuenlabrada",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_24",
+      "tag_name": "Igokea",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_25",
+      "tag_name": "Armani Milano",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_26",
+      "tag_name": "Efes",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_27",
+      "tag_name": "CSKA",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_28",
+      "tag_name": "Fenerbahce",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_29",
+      "tag_name": "Besiktas",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_30",
+      "tag_name": "Banvit",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_31",
+      "tag_name": "Uniks",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_32",
+      "tag_name": "Himki",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_33",
+      "tag_name": "Cantu",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_34",
+      "tag_name": "Boston",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_35",
+      "tag_name": "Clevland",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_36",
+      "tag_name": "Minesota",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_37",
+      "tag_name": "Denver",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_38",
+      "tag_name": "Utah",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": "OK"
+    },
+    {
+      "DT_RowId": "row_39",
+      "tag_name": "La Lakers",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_40",
+      "tag_name": "Sacramento",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_41",
+      "tag_name": "Djokovic",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_42",
+      "tag_name": "Nadal",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_43",
+      "tag_name": "Federer",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_44",
+      "tag_name": "Murray",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_45",
+      "tag_name": "Cilic",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_46",
+      "tag_name": "Troicki",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_47",
+      "tag_name": "Karlovic",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_48",
+      "tag_name": "Verdasko",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_49",
+      "tag_name": "Sharapova",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_50",
+      "tag_name": "Williams",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_51",
+      "tag_name": "Ivanovic",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_52",
+      "tag_name": "Jankovic",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_53",
+      "tag_name": "Goffin",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_54",
+      "tag_name": "Gulbis",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_55",
+      "tag_name": "Ramos",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_56",
+      "tag_name": "Berdych",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_57",
+      "tag_name": "Wawrinka",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_58",
+      "tag_name": "Tsonga",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_59",
+      "tag_name": "Monfis",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_60",
+      "tag_name": "Dimitrov",
+      "tag_type": "Teniser",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_61",
+      "tag_name": "La Clipers",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_62",
+      "tag_name": "Mepmhis",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_63",
+      "tag_name": "San Antonio",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_64",
+      "tag_name": "Golden State W",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_65",
+      "tag_name": "Portland",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_66",
+      "tag_name": "Toronto",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_67",
+      "tag_name": "Atlanta",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_68",
+      "tag_name": "Washington",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_69",
+      "tag_name": "Dallas",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_70",
+      "tag_name": "Baskonia",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
+    },
+    {
+      "DT_RowId": "row_70",
+      "tag_name": "Zalgiris",
+      "tag_type": "Kosarkaski klub",
+      "my_feed": " ",
+      "my_fav": " "
     }
   ]
 }

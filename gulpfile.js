@@ -14,6 +14,7 @@ del = require('del'),
 htmlmin = require('gulp-htmlmin'),
 jshint = require('gulp-jshint'),
 cleanCSS = require('gulp-clean-css'),
+concatCss = require('gulp-concat-css'),
 plumber = require("gulp-plumber"),
 browserSync = require("browser-sync"),
 reload = browserSync.reload;
@@ -23,47 +24,51 @@ reload = browserSync.reload;
 // /////////////////////////////////////////////////
 gulp.task("styles", function() {
   gulp.src("app/scss/main.scss")
-  .pipe(sourcemaps.init())
   .pipe(plumber())
   .pipe(sass({
     style: "compressed"
   }))
-  // .pipe(cleanCSS({compatibility: 'ie8'})) // Minify css
-  .pipe(rename({
-    suffix: '.min'
-  }))
+  .pipe(gulp.dest("app/assets/css"))
+  .pipe(reload({
+    stream: true
+  }));
+});
+
+gulp.task("styles-min", ['styles'],function() {
+  gulp.src("app/assets/css/*.css")
   .pipe(uglifycss({
     // "maxLineLen": 80,
     "uglyComments": true
   }))
-  .pipe(uncss({
-    html: ['app/*.html']
+  .pipe(concatCss("main.css"))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(rename({
+    suffix: '.min'
   }))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest("app/assets/css/"))
-  .pipe(reload({
-    stream: true
-  }));
+  .pipe(gulp.dest("app/assets/build/css"))
 });
 
 // /////////////////////////////////////////////////
 // Scripts Task
 // /////////////////////////////////////////////////
 gulp.task("scripts", function() {
-  gulp.src("app/js/*.js")
-  .pipe(sourcemaps.init())
+  gulp.src("app/assets/js/*.js")
   .pipe(jshint())
-  // .pipe(order([
-  //     "app/js/jquery.min.js",
-  // ]))
+  .pipe(order([
+      "jquery.js",
+      "jquery.dataTables.js",
+      "dataTables.editor.js",
+      "dataTables.buttons.js",
+      "dataTables.select.js",
+      "main.js"
+  ]))
   .pipe(concat('main.js'))
   .pipe(rename({
     suffix: '.min'
   }))
   .pipe(uglify())
   .pipe(jshint.reporter("default"))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest('app/assets/js/'))
+  .pipe(gulp.dest('app/assets/build/js/'))
   .pipe(reload({
     stream: true
   }));
@@ -100,50 +105,6 @@ gulp.task("watch", function() {
 });
 
 // /////////////////////////////////////////////////
-// BUILD Task *************************************
-// /////////////////////////////////////////////////
-// Browser-Sync Task/Build
-gulp.task('build:server', function() {
-  browserSync({
-    server: {
-      baseDir: "./build/"
-    }
-  })
-});
-
-// clear out all files and folders from build folder
-gulp.task('build:cleanfolder', function(cb) {
-  return del([
-    'build/**'
-  ], cb);
-});
-
-//task to create build directory for all files
-gulp.task('build:copy', ['build:cleanfolder'], function() {
-  return gulp.src('app/**/*/')
-  .pipe(gulp.dest('build/'));
-});
-
-//task to remove unwanted build files
-//list all files and directories here that don't wont to include
-gulp.task('build:remove', ['build:copy'], function(cb) {
-  del([
-     'build/scss/',
-     'build/js/',
-  ], cb);
-});
-
-// /////////////////////////////////////////////////
-// HTML Minify
-// /////////////////////////////////////////////////
-gulp.task('htmlmin', ['build:copy'], function() {
-  return gulp.src('app/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build/'))
-});
-
-// /////////////////////////////////////////////////
 // Default Task
 // /////////////////////////////////////////////////
-gulp.task("default", ['styles', 'scripts', 'watch', 'browser-sync']);
-gulp.task('build', ['build:copy', 'build:remove', 'build:server', 'htmlmin']);
+gulp.task("default", ['styles', 'styles-min', 'scripts', 'watch', 'browser-sync']);
